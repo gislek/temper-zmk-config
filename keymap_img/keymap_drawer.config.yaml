@@ -196,6 +196,7 @@ parse_config:
     '&ltog LGUI 7': {t: "Cancel\nSym", h: '⌘'}
     '&ltog LGUI 8': {t: "Cancel\nFunc", h: '⌘'}
     '&ltog LGUI 9': {t: "Cancel\nAdjust", h: '⌘'}
+    '&bootloader': "Boot-\nloader"
   skip_binding_parsing: false
   zmk_keycode_map:
     AMPERSAND: '&'
@@ -319,7 +320,7 @@ parse_config:
     LC(V): 'PASTE'
     RA(W): 'Å'
     RA(L): 'Ø'
-    RA(X): 'Æ'
+    RA(Z): 'Æ'
     RA(N5): '€'
     LA(TAB): '⎇↹'
 
