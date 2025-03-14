@@ -10,7 +10,16 @@ layers:
     - U
     - Y
     - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
+  - - {t: A, h: ⌘}
+    - {t: R, h: ⎇}
+    - {t: S, h: ⇧}
+    - {t: T, h: ⌃}
+    - G
+    - M
+    - {t: N, h: ⌃}
+    - {t: E, h: ⇧}
+    - {t: I, h: ⎇}
+    - {t: O, h: ⌘}
   - - Z
     - X
     - C
@@ -21,148 +30,111 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: default, h: toggle}
-  game:
-  - - ↹
-    - Q
-    - W
-    - E
-    - R
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⇧
-    - A
-    - S
-    - D
-    - F
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌃
-    - Z
-    - X
-    - C
-    - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   - - ESC
-    - {t: ▽, type: trans}
-    - SPACE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
+    - {t: SPACE, h: nn}
+    - {t: RET, h: sym}
+    - {t: BSPC, h: fun}
+    - ⇧
+    - ↹
+  nn:
+  - - PAGE UP
+    - HOME
+    - ↑
+    - END
+    - PSCRN
+    - AltGr+W
     - '7'
     - '8'
     - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
+    - {t: ▽, type: trans}
+  - [PAGE DOWN, ←, ↓, →, Alt+↹, AltGr+L, '4', '5', '6', '0']
+  - - {t: ▽, type: trans}
+    - CUT
+    - COPY
+    - PASTE
+    - {t: ▽, type: trans}
+    - AltGr+Z
     - '1'
     - '2'
-    - '3'
-    - {t: '=', s: +}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - DEL
-    - HOME
-    - END
-    - ↹
-    - BSPC
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - {t: ▽, type: trans}
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: ESC, s: '`'}
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  sym:
+  - - AltGr+5
+    - $
+    - <
+    - '>'
+    - {t: '=', s: +}
+    - _
+    - {t: '[', s: '{'}
+    - {t: ']', s: '}'}
+    - ^
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
+    - '#'
+    - (
+    - )
+    - +
+    - {t: '-', s: _}
+    - '{'
+    - '}'
+    - '@'
     - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - '~'
+    - '|'
+    - '&'
+    - '%'
+    - '*'
+    - /
+    - \
+    - {t: '`', s: '~'}
     - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  fun:
-  - - {t: game, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - OUT USB
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  fun:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - VOL UP
+    - {t: ▽, type: trans}
+    - '&bootloader'
+    - '&bootloader'
     - F7
     - F8
     - F9
     - F12
+  - - {t: ▽, type: trans}
+    - PREV
+    - VOL DN
+    - NEXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F4
+    - F5
+    - F6
+    - F11
   - - {t: BT, h: '0'}
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
     - {t: BT, h: '4'}
     - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
-    - PREV
-    - PP
-    - NEXT
-    - OUT BLE
-    - {t: ▽, type: trans}
     - F1
     - F2
     - F3
     - F10
   - - {t: ▽, type: trans}
+    - PP
+    - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
