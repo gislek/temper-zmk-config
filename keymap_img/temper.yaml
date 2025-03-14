@@ -62,7 +62,7 @@ layers:
     - COPY
     - PASTE
     - {t: ▽, type: trans}
-    - AltGr+Z
+    - Æ
     - '1'
     - '2'
     - {t: ▽, type: trans}
@@ -115,8 +115,12 @@ layers:
     - {t: ▽, type: trans}
     - VOL UP
     - {t: ▽, type: trans}
-    - '&bootloader'
-    - '&bootloader'
+    - 'Boot-
+
+      loader'
+    - 'Boot-
+
+      loader'
     - F7
     - F8
     - F9
