@@ -32,8 +32,8 @@ layers:
     - {t: '?', s: '!'}
   - - ESC
     - {t: SPACE, h: Nav/Num}
-    - {t: RET, h: Sym}
-    - {t: BSPC, h: Fun}
+    - {t: ⏎, h: Sym}
+    - {t: ⌫, h: Fun}
     - ⇧
     - ↹
   Nav/Num:
@@ -42,7 +42,7 @@ layers:
     - ↑
     - END
     - PSCRN
-    - AltGr+W
+    - Å
     - '7'
     - '8'
     - '9'
@@ -51,16 +51,16 @@ layers:
     - ←
     - ↓
     - →
-    - Alt+↹
-    - AltGr+L
+    - ⎇↹
+    - Ø
     - {t: '4', h: ⌃}
     - {t: '5', h: ⇧}
     - {t: '6', h: ⎇}
     - {t: '0', h: ⌘}
   - - {t: ▽, type: trans}
-    - Ctl+X
-    - Ctl+C
-    - Ctl+V
+    - CUT
+    - COPY
+    - PASTE
     - {t: ▽, type: trans}
     - AltGr+Z
     - '1'
@@ -70,18 +70,18 @@ layers:
   - - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-    - DEL
+    - ⌦
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Sym:
-  - - AltGr+5
+  - - €
     - $
     - <
     - '>'
-    - {t: '=', s: +}
+    - '='
     - _
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
+    - '['
+    - ']'
     - ^
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
@@ -89,7 +89,7 @@ layers:
     - (
     - )
     - +
-    - {t: '-', s: _}
+    - '-'
     - '{'
     - '}'
     - '@'
@@ -102,7 +102,7 @@ layers:
     - '*'
     - /
     - \
-    - {t: '`', s: '~'}
+    - '`'
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -142,7 +142,7 @@ layers:
     - F3
     - F10
   - - {t: ▽, type: trans}
-    - PP
+    - ⏯
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
