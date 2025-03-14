@@ -197,6 +197,7 @@ parse_config:
     '&ltog LGUI 8': {t: "Cancel\nFunc", h: '⌘'}
     '&ltog LGUI 9': {t: "Cancel\nAdjust", h: '⌘'}
     '&bootloader': "Boot-\nloader"
+    '&swapper': '⎇↹'
   skip_binding_parsing: false
   zmk_keycode_map:
     AMPERSAND: '&'
