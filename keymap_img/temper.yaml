@@ -1,5 +1,5 @@
 layers:
-  default:
+  Base:
   - - Q
     - W
     - F
@@ -31,12 +31,12 @@ layers:
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
   - - ESC
-    - {t: SPACE, h: nn}
-    - {t: RET, h: sym}
-    - {t: BSPC, h: fun}
+    - {t: SPACE, h: Nav/Num}
+    - {t: RET, h: Sym}
+    - {t: BSPC, h: Fun}
     - ⇧
     - ↹
-  nn:
+  Nav/Num:
   - - PAGE UP
     - HOME
     - ↑
@@ -47,11 +47,20 @@ layers:
     - '8'
     - '9'
     - {t: ▽, type: trans}
-  - [PAGE DOWN, ←, ↓, →, Alt+↹, AltGr+L, '4', '5', '6', '0']
+  - - PAGE DOWN
+    - ←
+    - ↓
+    - →
+    - Alt+↹
+    - AltGr+L
+    - {t: '4', h: ⌃}
+    - {t: '5', h: ⇧}
+    - {t: '6', h: ⎇}
+    - {t: '0', h: ⌘}
   - - {t: ▽, type: trans}
-    - CUT
-    - COPY
-    - PASTE
+    - Ctl+X
+    - Ctl+C
+    - Ctl+V
     - {t: ▽, type: trans}
     - AltGr+Z
     - '1'
@@ -64,7 +73,7 @@ layers:
     - DEL
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  sym:
+  Sym:
   - - AltGr+5
     - $
     - <
@@ -101,7 +110,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  fun:
+  Fun:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - VOL UP
