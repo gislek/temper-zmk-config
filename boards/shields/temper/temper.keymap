@@ -122,7 +122,7 @@
                                    &kp ESC      &lt NN SPACE    &lt SYM RET       &lt FUN BSPC  &kp LSHFT  &kp TAB
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
-                };ts
+                };
 
                 nn_layer {
                         bindings = <
