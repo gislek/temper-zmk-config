@@ -110,7 +110,7 @@
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp B>, <&kt C>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
         };
     };
         keymap {
