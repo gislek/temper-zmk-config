@@ -207,24 +207,26 @@ parse_config:
     AT: '@'
     AT_SIGN: '@'
     BACKSLASH: {t: '\', s: '|'}
+    BSPC: '⌫'
     BSLH: \
     CARET: ^
     COLON: ':'
     COMMA: {t: ',', s: '<'}
+    DEL: '⌦'
     DLLR: $
     DOLLAR: $
     DOT: {t: '.', s: '>'}
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    EQUAL: {t: '=', s: '+'}
+    EQUAL: '='
     EXCL: '!'
     EXCLAMATION: '!'
     FSLH: /
-    GRAVE: {t: '`', s: '~'}
+    GRAVE: '`'
     GREATER_THAN: '>'
     GT: '>'
     HASH: '#'
-    LBKT: {t: '[', s: '{'}
+    LBKT: '['
     LBRC: '{'
     LEFT_BRACE: '{'
     LEFT_BRACKET: '['
@@ -232,7 +234,7 @@ parse_config:
     LESS_THAN: <
     LPAR: (
     LT: <
-    MINUS: {t: '-', s: '_'}
+    MINUS: '-'
     NON_US_BACKSLASH: \
     NON_US_BSLH: '|'
     NON_US_HASH: '#'
@@ -246,7 +248,7 @@ parse_config:
     PRCNT: '%'
     QMARK: '?'
     QUESTION: '?'
-    RBKT: {t: ']', s: '}'}
+    RBKT: ']'
     RBRC: '}'
     RIGHT_BRACE: '}'
     RIGHT_BRACKET: ']'
@@ -284,10 +286,12 @@ parse_config:
     DOWN: ↓
     TAB: ↹
     RETURN: '⏎'
+    RET: '⏎'
     ESCAPE: '⎋'
     C_REWIND: '⏮'
     C_FAST_FORWARD: '⏭'
     C_PAUSE: '⏯'
+    C_PP: '⏯'
     C_MUTE: "VOL\nMUTE"
     C_VOLUME_DOWN: "VOL\nDOWN"
     C_VOLUME_UP: "VOL\nUP"
@@ -310,6 +314,15 @@ parse_config:
     'LG(V)': '⌘V'
     'LC(TAB)': '⌃↹'
     'LS(LC(TAB))': '⌃⇧↹'
+    LC(X): 'CUT'
+    LC(C): 'COPY'
+    LC(V): 'PASTE'
+    RA(W): 'Å'
+    RA(L): 'Ø'
+    RA(X): 'Æ'
+    RA(N5): '€'
+    LA(TAB): '⎇↹'
+
 #   zmk_combos:
 #     combo_tog_nav_word: {'a': 'bottom', 'o': -0.25}
 #     combo_tog_num_word: {'a': 'bottom', 'o': 0.0}
