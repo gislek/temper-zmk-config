@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: temper}
 layers:
   Base:
   - - Q
@@ -111,7 +112,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Fun:
-  - - EP TOG
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - VOL UP
     - {t: ▽, type: trans}
