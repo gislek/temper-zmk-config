@@ -112,7 +112,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Fun:
-  - - {t: ▽, type: trans}
+  - - BT CLR
     - {t: ▽, type: trans}
     - VOL UP
     - {t: ▽, type: trans}
