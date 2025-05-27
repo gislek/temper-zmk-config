@@ -324,6 +324,7 @@ parse_config:
     RA(Z): 'Æ'
     RA(N5): '€'
     LA(TAB): '⎇↹'
+    RA(APOS): '´'
 
 #   zmk_combos:
 #     combo_tog_nav_word: {'a': 'bottom', 'o': -0.25}
