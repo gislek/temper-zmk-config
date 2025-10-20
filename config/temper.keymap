@@ -99,7 +99,7 @@
             bindings = <&kp>, <&kp>;
     
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <500>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <300>;
             flavor = "balanced";
@@ -127,7 +127,7 @@
             bindings = <&kp>, <&kp>;
     
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <500>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <300>;
             flavor = "balanced";
@@ -139,6 +139,16 @@
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+        };
+
+        ltq: layer_tap_quick {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
+            quick-tap-ms = <175>;
         };
     };
         keymap {
@@ -153,7 +163,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp ESC      &lt NN SPACE    &lt SYM RET       &lt FUN BSPC  &kp LSHFT  &kp TAB
+                                   &kp ESC      &lt NN SPACE    &lt SYM RET       &ltq FUN BSPC  &kp LSHFT  &kp TAB
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
 
