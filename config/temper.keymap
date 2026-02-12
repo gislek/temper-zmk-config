@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_nb.h"
 
 #define DEFAULT 0
 #define NN 1
@@ -40,31 +41,31 @@
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&kp NB_COMMA>, <&kp NB_SEMI>;
             mods = <(MOD_LSFT)>;
         };
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&kp NB_DOT>, <&kp NB_COLON>;
             mods = <(MOD_LSFT)>;
         };
         qmrk_excl: qmrk_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
+            bindings = <&kp NB_QMARK>, <&kp NB_EXCL>;
             mods = <(MOD_LSFT)>;
         };
         slh_morph: slh_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
+            bindings = <&kp NB_FSLH>, <&kp NB_BSLH>;
             mods = <(MOD_LSFT)>;
         };
         amps_morph: amps_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp AMPS>, <&kp PIPE>;
+            bindings = <&kp NB_AMPS>, <&kp NB_PIPE>;
             mods = <(MOD_LSFT)>;
         };
         hm: hm {
@@ -141,11 +142,11 @@
                 default_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y       &kp APOS   
+        &kp NB_Q      &kp NB_W      &kp NB_F      &kp NB_P      &kp NB_B          &kp NB_J      &kp NB_L      &kp NB_U      &kp NB_Y    &kp NB_AE   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &hms LGUI A  &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G             &kp M        &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hms LGUI O
+        &hms LGUI NB_A  &hml LALT NB_R   &hml LSHFT NB_S  &hml LCTRL NB_T  &kp NB_G      &kp NB_M     &hmr LCTRL NB_N  &hmr RSHFT NB_E  &hmr LALT NB_I   &hms LGUI NB_O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &comma_semi    &dot_colon    &qmrk_excl
+        &kp NB_Z      &kp NB_X      &kp NB_C      &kp NB_D      &kp NB_V          &kp NB_K      &kp NB_H   &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                    &kp ESC      &lt NN SPACE    &lt SYM RET       &ltq FUN BSPC  &kp LSHFT  &kp TAB
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -157,11 +158,11 @@
                 nn_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp PAGE_UP       &kp HOME      &kp UP        &kp END     &kp PSCRN         &kp RA(W)       &kp N7      &kp N8       &kp N9        ______
+    &kp PAGE_UP       &kp HOME      &kp UP        &kp END     &kp PSCRN         &kp NB_A_RING   &kp NB_N7    &kp NB_N8    &kp NB_N9     ______
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LC(A)         &kp LEFT      &kp DOWN      &kp RIGHT   &swapper         &kp RA(L)      &hmr LCTRL N4   &hmr RSHFT N5  &hmr LALT N6 &hms LGUI N0
+    &kp LC(NB_A)      &kp LEFT      &kp DOWN      &kp RIGHT   &swapper         &kp NB_O_SLASH  &hmr LCTRL NB_N4   &hmr RSHFT NB_N5  &hmr LALT NB_N6 &hms LGUI NB_N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp PAGE_DOWN     &kp LC(X)     &kp LC(C)    &kp LC(V)     ______          &kp RA(Z)        &kp N1       &kp N2       &kp N3        ______
+    &kp PAGE_DOWN     &kp LC(NB_X)  &kp LC(NB_C)  &kp LC(NB_V)  ______          &kp NB_AE       &kp NB_N1    &kp NB_N2    &kp NB_N3     ______
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     ______        ______        ______          &kp DEL        ______        ______
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -173,11 +174,11 @@
                 sym_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp RA(N5)       &kp DLLR       &kp LT      &kp GT     &kp EQUAL          &kp UNDER       &kp LBKT        &kp RBKT     &kp CARET      ______
+      &kp NB_EURO      &kp NB_DLLR    &kp NB_LT    &kp NB_GT    &kp NB_EQUAL      &kp NB_UNDER    &kp NB_LBKT     &kp NB_RBKT    &kp NB_CARET   ______
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      ______      &kp HASH      &kp LPAR      &kp RPAR         &kp PLUS         &kp MINUS       &kp LBRC        &kp RBRC        &kp AT      ______
+      ______      &kp NB_HASH    &kp NB_LPAR   &kp NB_RPAR      &kp NB_PLUS       &kp NB_MINUS    &kp NB_LBRC     &kp NB_RBRC    &kp NB_AT      ______
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      ______     &kp TILDE       &kp PIPE      &kp AMPS       &kp PRCNT          &kp STAR      &kp FSLH        &kp BSLH   &kp RA(APOS)   ______
+      ______     &kp NB_TILDE    &kp NB_PIPE   &kp NB_AMPS      &kp NB_PRCNT      &kp NB_STAR     &kp NB_FSLH     &kp NB_BSLH    &kp NB_ACUTE   ______
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     ______        ______        ______            ______        ______        ______
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
