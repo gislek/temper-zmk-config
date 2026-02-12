@@ -50,8 +50,8 @@
             bindings = <&kp NB_DOT>, <&kp NB_COLON>;
             mods = <(MOD_LSFT)>;
         };
-        sqt_dqt: sqt_dqt{
-            compatible = "zmk,behaviour-mod-morph";
+        sqt_dqt: sqt_dqt {
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_SQT>, <&kp NB_DQT>;
             mods = <(MOD_LSFT)>;
