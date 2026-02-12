@@ -50,6 +50,12 @@
             bindings = <&kp NB_DOT>, <&kp NB_COLON>;
             mods = <(MOD_LSFT)>;
         };
+        sqt_dqt: sqt_dqt{
+            compatible = "zmk,behaviour-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NB_SQT>, <&kp NB_DQT>;
+            mods = <(MOD_LSFT)>;
+        };
         qmrk_excl: qmrk_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -142,7 +148,7 @@
                 default_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp NB_Q      &kp NB_W      &kp NB_F      &kp NB_P      &kp NB_B          &kp NB_J      &kp NB_L      &kp NB_U      &kp NB_Y    &kp NB_APOS   
+        &kp NB_Q      &kp NB_W      &kp NB_F      &kp NB_P      &kp NB_B          &kp NB_J      &kp NB_L      &kp NB_U      &kp NB_Y    &sqt_dqt   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &hms LGUI NB_A  &hml LALT NB_R   &hml LSHFT NB_S  &hml LCTRL NB_T  &kp NB_G      &kp NB_M     &hmr LCTRL NB_N  &hmr RSHFT NB_E  &hmr LALT NB_I   &hms LGUI NB_O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
