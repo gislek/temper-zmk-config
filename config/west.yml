@@ -8,7 +8,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 9fc10dd
       import: app/west.yml
 
     - name: zmk-tri-state
