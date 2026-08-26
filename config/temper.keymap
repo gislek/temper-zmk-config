@@ -140,6 +140,16 @@
             display-name = "Layer-Tap";
             quick-tap-ms = <175>;
         };
+
+        ltq_bspc_del: layer_tap_quick_bspc_del {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <1>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&bspc_del>;
+            display-name = "Layer-Tap-BspcDel";
+            quick-tap-ms = <175>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -153,7 +163,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp NB_Z      &kp NB_X      &kp NB_C      &kp NB_D      &kp NB_V          &kp NB_K      &kp NB_H   &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp ESC      &ltq NN SPACE  &ltq SYM bspc_del     &lt FUN RET  &kp LSHFT  &kp TAB
+                                   &kp ESC      &ltq NN SPACE  &ltq_bspc_del SYM     &lt FUN RET  &kp LSHFT  &kp TAB
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
 
