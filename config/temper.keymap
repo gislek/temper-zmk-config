@@ -143,7 +143,7 @@
 
         ltq_bspc_del: layer_tap_quick_bspc_del {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&bspc_del>;
@@ -163,7 +163,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp NB_Z      &kp NB_X      &kp NB_C      &kp NB_D      &kp NB_V          &kp NB_K      &kp NB_H   &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp ESC      &ltq NN SPACE  &ltq_bspc_del SYM     &lt FUN RET  &kp LSHFT  &kp TAB
+                                   &kp ESC      &ltq NN SPACE  &ltq_bspc_del SYM 0     &lt FUN RET  &kp LSHFT  &kp TAB
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
 
